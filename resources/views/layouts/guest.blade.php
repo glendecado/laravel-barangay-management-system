@@ -3,7 +3,7 @@
 
 <head>
     <!-- Meta tags, stylesheets, etc. -->
-
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Dynamic title -->
     <title>@yield('title', 'Your App')</title>
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
